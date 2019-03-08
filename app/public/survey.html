@@ -14,7 +14,7 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1>Friend Finder</h1>
+      <h1>Friend Finder Survey</h1>
       <hr>
       <h2>Answer a few basic questions.</h2>
       <h2>Then find the friend with the greatest compatibility!</h2>
@@ -33,7 +33,7 @@
       <br>
       <h3>Question 1</h3>
       <label for="question 1">
-        <h4>question 1 text</h4>
+        <h4>You like watching television and will watch most things suggested to you.</h4>
       </label>
       <br>
       <select>
@@ -43,152 +43,175 @@
         <option value="4">4</option>
         <option value="5">5 Strongly Agree</option>
       </select>
-    </div>
-    <br>
-    <div>
-      <h3>Question 2</h3>
-      <label for="question 2">
-        <h4>question 2 text</h4>
-      </label>
-      <br>
-      <select>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <br>
-    <div>
-      <h3>Question 3</h3>
-      <label for="question 3">
-        <h4>question 3 text</h4>
-      </label>
-      <br>
-      <select>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <br>
-    <div>
-      <h3>Question 4</h3>
-      <label for="question 4">
-        <h4>question 4 text</h4>
-      </label>
-      <br>
-      <select>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <br>
-    <div>
-      <h3>Question 5</h3>
-      <label for="question 5">
-        <h4>question 5 text</h4>
-      </label>
-      <br>
-      <select>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <br>
-    <div>
-      <h3>Question 6</h3>
-      <label for="question 6">
-        <h4>question 6 text</h4>
-      </label>
-      <br>
-      <select>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <br>
-    <div>
-      <h3>Question 7</h3>
-      <label for="question 7">
-        <h4>question 7 text</h4>
-      </label>
-      <br>
-      <select>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <br>
-    <div>
-      <h3>Question 8</h3>
-      <label for="question 8">
-        <h4>question 8 text</h4>
-      </label>
-      <br>
-      <select>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <br>
-    <div>
-      <h3>Question 9</h3>
-      <label for="question 9">
-        <h4>question 9 text</h4>
-      </label>
-      <br>
-      <select>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <br>
-    <div>
-      <h3>Question 10</h3>
-      <label for="question 10">
-        <h4>question 10 text</h4>
-      </label>
-      <br>
-      <select>
-        <option value="1">1 Strongly Disagree</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 Strongly Agree</option>
-      </select>
-    </div>
-    <hr>
-    <p>
-      <a href="../routing/htmlRoutes.js">HTML Routes</a> | <a href="../routing/apiRoutes.js">API Routes</a>
-      | &copy; zzzbray
-    </p>
-  </div>
 
-  <script src="../data/friends.js"></script>
-  <script src="../routing/apiRoutes.js"></script>
-  <script src="../routing/htmlRoutes.js"></script>
+      <br>
+      <div id="fullSurvey">
+        <div>
+          <h3>Question 2</h3>
+          <label for="question 2">
+            <h4>You believe that religion has an important place in the world and is important to you.</h4>
+          </label>
+          <br>
+          <select>
+            <option value="1">1 Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 Strongly Agree</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <h3>Question 3</h3>
+          <label for="question 3">
+            <h4>You believe that with hard work and much effort most people can achieve what they want in life.</h4>
+          </label>
+          <br>
+          <select>
+            <option value="1">1 Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 Strongly Agree</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <h3>Question 4</h3>
+          <label for="question 4">
+            <h4>You prefer white tablecloths on date night over laminated menus.</h4>
+          </label>
+          <br>
+          <select>
+            <option value="1">1 Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 Strongly Agree</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <h3>Question 5</h3>
+          <label for="question 5">
+            <h4>You'd rather vacation on a beach than in the mountains.</h4>
+          </label>
+          <br>
+          <select>
+            <option value="1">1 Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 Strongly Agree</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <h3>You enjoy reading and try to find time at least a few times a week to read a book.</h3>
+          <label for="question 6">
+            <h4>question 6 text</h4>
+          </label>
+          <br>
+          <select>
+            <option value="1">1 Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 Strongly Agree</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <h3>You enjoy traveling and would like to take a major trip at least once a year.</h3>
+          <label for="question 7">
+            <h4>question 7 text</h4>
+          </label>
+          <br>
+          <select>
+            <option value="1">1 Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 Strongly Agree</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <h3>Question 8</h3>
+          <label for="question 8">
+            <h4>question 8 text</h4>
+          </label>
+          <br>
+          <select>
+            <option value="1">1 Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 Strongly Agree</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <h3>Question 9</h3>
+          <label for="question 9">
+            <h4>question 9 text</h4>
+          </label>
+          <br>
+          <select>
+            <option value="1">1 Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 Strongly Agree</option>
+          </select>
+        </div>
+        <br>
+        <div>
+          <h3>Question 10</h3>
+          <label for="question 10">
+            <h4>question 10 text</h4>
+          </label>
+          <br>
+          <select>
+            <option value="1">1 Strongly Disagree</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 Strongly Agree</option>
+          </select>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div id="thanksModal modal" tabindex="-1" role="dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Thank you for filling out the survey!"</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Modal Body Text</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        <p>
+          Thanks a lot for taking our survey
+        </p>
+      </div>
+      <hr>
+      <p>
+        <a href="../routing/htmlRoutes.js">HTML Routes</a> | <a href="../routing/apiRoutes.js">API Routes</a>
+        | &copy; zzzbray
+      </p>
+    </div>
+
+    <script src="../data/friends.js"></script>
+    <script src="../routing/apiRoutes.js"></script>
+    <script src="../routing/htmlRoutes.js"></script>
 </body>
 
 </html>
