@@ -6,15 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Home Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Links to Bootstrap and jQuery and local Javascript and Glyphicon-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="jquery-3.3.1.min.js"></script>
+  <!-- Links to Bootstrap, jQuery,  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
   <script src="../data/friends.js"></script>
+  <script src="jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../public/style.css">
 
 </head>
 
 <body>
   <div class="container">
+    <!-- Main Content -->
     <div class="jumbotron">
       <h1>Friend Finder</h1>
       <hr>
@@ -24,13 +27,17 @@
     <form action="../public/survey.html">
       <input type="submit" value="Go to Survey" />
     </form>
-    <br><br>
-    <a href="../routing/htmlRoutes.js">HTML Routes</a> | <a href="../routing/apiRoutes.js">API Routes</a>
-
   </div>
-  <script src="../data/friends.js"></script>
-  <script src="../routing/apiRoutes.js"></script>
-  <script src="../routing/htmlRoutes.js"></script>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-.5">
+    <p>
+      <a href="../routing/htmlRoutes.js">HTML Routes</a> | <a href="../routing/apiRoutes.js">API Routes</a>
+      | <a href="https://github.com/zzzbray/friendFinder">GitHub Repo</a> | 2019 &copy; zzzbray
+    </p>
+  </footer>
+
+
 </body>
 
 </html>
