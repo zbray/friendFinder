@@ -6,12 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Survey</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Links to Bootstrap, jQuery,  -->
+  <!-- Links to Bootstrap,  -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
-  <script src="../data/friends.js"></script>
-  <script src="jquery-3.3.1.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="../public/style.css">
+  <script src="https://code.jquery.com/jquery.js">
+  </script>
+  <style>
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      line-height: 60px;
+    }
+    </style>
 </head>
 
 <body>
@@ -28,11 +36,11 @@
     <div id="input">
       <h4>About You</h4>
       <div>
-        <input type="text" id="name" placeholder="Name (Required)" required>
+        <input type="text" class="mand" id="name" placeholder="Name (Required)" required>
       </div>
       <br>
       <div>
-        <input type="text" id="photo" placeholder="Link to photo image (Required)" required>
+        <input type="text" class="mand" id="photo" placeholder="Link to photo image (Required)" required>
       </div>
       <br>
     </div>
@@ -44,7 +52,8 @@
       <h4>You like watching television and will watch most things suggested to you.</h4>
       </label>
       <br>
-      <select id="q1">
+      <select class="mand" id="q1">
+        <option disabled selected>Select an option</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -57,7 +66,8 @@
         <h4>You believe that religion has an important place in the world and is important to you.</h4>
       </label>
       <br>
-      <select id="q2">
+      <select class="mand" id="q2">
+        <option disabled selected>Select an option</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -70,7 +80,8 @@
         <h4>You believe that with hard work and much effort most people can achieve what they want in life.</h4>
       </label>
       <br>
-      <select id="q3">
+      <select class="mand" id="q3">
+        <option disabled selected>Select an option</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -83,7 +94,8 @@
         <h4>You prefer white tablecloths on date night over laminated menus.</h4>
       </label>
       <br>
-      <select id="q4">
+      <select class="mand" id="q4">
+        <option disabled selected>Select an option</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -96,7 +108,8 @@
         <h4>You'd rather vacation on a beach than in the mountains.</h4>
       </label>
       <br>
-      <select id="q5">
+      <select class="mand" id="q5">
+        <option disabled selected>Select an option</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -109,7 +122,8 @@
         <h4>You enjoy reading and try to find time at least a few times a week to read a book.</h4>
       </label>
       <br>
-      <select id="q6">
+      <select class="mand" id="q6">
+        <option disabled selected>Select an option</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -122,7 +136,8 @@
         <h4>You enjoy traveling and would like to take a major trip at least once a year</h4>
       </label id="q7">
       <br>
-      <select>
+      <select class="mand" id="q7">
+        <option disabled selected>Select an option</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -135,7 +150,8 @@
         <h4>You enjoy playing sports</h4>
       </label id="q8">
       <br>
-      <select>
+      <select class="mand" id="q8">
+        <option disabled selected>Select an option</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -148,7 +164,8 @@
         <h4>You enjoy playing video games.</h4>
       </label id="q9">
       <br>
-      <select>
+      <select class="mand" id="q9">
+        <option disabled selected>Select an option</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -161,7 +178,8 @@
         <h4>You enjoy going to the movies by yourself</h4>
       </label>
       <br>
-      <select id="q10">
+      <select class="mand" id="q10">
+        <option disabled selected>Select an option</option>
         <option value="1">1 Strongly Disagree</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -209,8 +227,33 @@
   </div>
 
   <!-- Script -->
+
   <script>
-    $();
+    //Store scores on a variable
+    $(document).ready(function () {
+      $("#submit").on("click", function () {
+        //Function returns true or false if user filled out all mand fields
+        function mandatoryFields() {
+          var isFilled = true;
+          $('.mand').each(function () {
+            if ($(this).val() === "")
+              isFilled = false;
+          })
+          return isFilled;
+        }
+        //check for isFilled truth to run app
+        if (mandatoryFields() === true) {
+          var scores = JSON.stringify([$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5")
+            .val(),
+            $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()
+          ]);
+          console.log(scores);
+        }
+        if (mandatoryFields() === false) {
+          console.log("You must complete the survey!")
+        }
+      })
+    })
   </script>
 </body>
 
