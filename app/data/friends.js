@@ -1,5 +1,5 @@
 //Empty array to store survey entries
 
-var friendsArray = [];
+var friends = [];
 
-moedul.exports = friendArray;
+module.exports = friends;
