@@ -223,8 +223,8 @@
           </button>
         </div>
         <div class="modal-body">
-          <h5 id="matchName"></h5>
-          <img id="matchPhoto" width="300px" alt="Wubba Lubba Dub Dub">
+          <h5 id="bfName"></h5>
+          <img id="bfPhoto" width="300px" alt="Wubba Lubba Dub Dub">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -268,7 +268,6 @@
               $("#q9").val().trim(),
               $("#q10").val().trim()
             ]
-
           }
           console.log("265s: " + user)
 
@@ -276,6 +275,8 @@
           $.post("/api/friends", user, function (data) {
             console.log("data: " + data)
             console.log("user: " + user)
+            $("#bfName").text(data.bfName);
+            $("bfPhoto").attr("src", data.bfPhoto);
           })
         };
         if (mandatoryFields() === false) {
