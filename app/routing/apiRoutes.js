@@ -29,7 +29,6 @@ module.exports = function (app) {
         // console.log("29a friendsArray[i].scores[j]:" + friendsArray[i].scores[j]);
         // console.log("30a userScores " + userScores);
         totalDiff += Math.abs(userScores[j] - friendsArray[i].scores[j]);
-        console.log("so what's wrong?: "+totalDiff)
         // console.log("30a friendsArray[i].scores[j]: " + friendsArray[i].scores[j]);
         // console.log("31a userScores[j]: " + userScores[j]);
         // console.log("35a totalDiff: " + totalDiff)
