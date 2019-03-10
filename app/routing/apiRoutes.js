@@ -39,14 +39,14 @@ module.exports = function (app) {
         bestFriend.bfName = friendsArray[i].name;
         bestFriend.bfPhoto = friendsArray[i].photo;
 
-        console.log("XXXXXXXXXXXXXXXXXXXXXXXX");
-        console.log(friendsArray[i].name);
-        console.log(friendsArray[i].photo);
+        // console.log("XXXXXXXXXXXXXXXXXXXXXXXX");
+        // console.log(friendsArray[i].name);
+        // console.log(friendsArray[i].photo);
       }
 
     }
-    // console.log("Best Friend Name: " + bestFriend.name);
-    // console.log("Best Friend Photo: " + bestFriend.photo);
+    console.log("Best Friend Name: " + bestFriend.bfName);
+    console.log("Best Friend Photo: " + bestFriend.bfPhoto);
 
     //Push to Array
     friendsArray.push(user);
