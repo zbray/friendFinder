@@ -20,7 +20,7 @@ module.exports = function (app) {
 
     // Loop through all scores and friends
     for (var i = 0; i < friendsArray.length; i++) {
-      console.log("31a names: " + friendsArray[i].name);
+      // console.log("31a names: " + friendsArray[i].name);
       var totalDiff = 0;
 
       //Loop through all the scores of all the stored friends
@@ -32,8 +32,8 @@ module.exports = function (app) {
         // console.log("30a friendsArray[i].scores[j]: " + friendsArray[i].scores[j]);
         // console.log("31a userScores[j]: " + userScores[j]);
         // console.log("35a totalDiff: " + totalDiff)
-        console.log("37a totalDiff: " + totalDiff)
-        console.log("38a bfDifference: " + bestFriend.bfDifference)
+        // console.log("37a totalDiff: " + totalDiff)
+        // console.log("38a bfDifference: " + bestFriend.bfDifference)
       }
       if (totalDiff <= bestFriend.bfDifference) {
         bestFriend.bfName = friendsArray[i].name;
@@ -45,15 +45,15 @@ module.exports = function (app) {
       }
 
     }
-    console.log("Best Friend Name: " + bestFriend.bfName);
-    console.log("Best Friend Photo: " + bestFriend.bfPhoto);
+    // console.log("Best Friend Name: " + bestFriend.bfName);
+    // console.log("Best Friend Photo: " + bestFriend.bfPhoto);
 
     //Push to Array
     friendsArray.push(user);
     res.json(bestFriend)
-    console.log("final bf: " + bestFriend.bfName);
-    console.log("final photo: " + bestFriend.bfPhoto);
-    console.log("------")
+    // console.log("final bf: " + bestFriend.bfName);
+    // console.log("final photo: " + bestFriend.bfPhoto);
+    // console.log("------")
   });
 }
 

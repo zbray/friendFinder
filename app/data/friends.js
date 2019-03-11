@@ -1,10 +1,16 @@
 //Empty array to store survey entries
 
 var friendsArray = [{
+    "name": "Ahmed",
+    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "scores": [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
+  },
+  {
     "name": "Monica",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Courteney_Cox_1995.jpg/260px-Courteney_Cox_1995.jpg",
     "scores": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
-  }, {
+  },
+  {
     "name": "Rachel",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/JenniferAniston08TIFF.jpg/260px-JenniferAniston08TIFF.jpg",
     "scores": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]

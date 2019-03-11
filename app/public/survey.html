@@ -199,7 +199,6 @@
         </form>
         <hr>
       </div>
-
     </div>
   </div>
 
@@ -269,18 +268,18 @@
               $("#q10").val().trim()
             ]
           }
-          console.log("265s: " + user)
+          // console.log("265s: " + user)
 
           //Add user inputs to friends list
           $.post("/api/friends", user, function (data) {
-            console.log("data: " + data)
-            console.log("user: " + user)
+            // console.log("data: " + data)
+            // console.log("user: " + user)
             $("#bfName").text(data.bfName);
             $("#bfPhoto").attr("src", data.bfPhoto);
           })
         };
         if (mandatoryFields() === false) {
-          alert("Survey is incomplete!")
+          alert("Survey is incomplete! Please finish the survey before requesting the results.")
         };
       });
     });
