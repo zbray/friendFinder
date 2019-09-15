@@ -18,4 +18,4 @@ Visual Studio Code, Terminal, Mac OS
 ### References
 This repo is currently displayed on my [porfolio](https://zbray.github.io/bootstrapPortfolio/portfolio.html) and its [repo](https://github.com/zbray/bootstrapPortfolio).
 
-&copy; 2019 zzzbray
+&copy; 2019 zbray
