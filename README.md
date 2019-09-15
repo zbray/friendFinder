@@ -16,6 +16,6 @@ Visual Studio Code, Terminal, Mac OS
 [Heroku](https://friend-findermar10.herokuapp.com/)
 
 ### References
-This repo is currently displayed on my [porfolio](https://zzzbray.github.io/bootstrapPortfolio/portfolio.html) and its [repo](https://github.com/zzzbray/bootstrapPortfolio).
+This repo is currently displayed on my [porfolio](https://zbray.github.io/bootstrapPortfolio/portfolio.html) and its [repo](https://github.com/zbray/bootstrapPortfolio).
 
 &copy; 2019 zzzbray
